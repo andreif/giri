@@ -1,9 +1,9 @@
 giri
 ====
 
-# OS X only
-# brew install flac
-# run and speak to the mic (first second is usually lost though)
+OS X only
+brew install flac
+run and speak to the mic (first second is usually lost though)
 
 ```py
 from giri.speech import recognize
