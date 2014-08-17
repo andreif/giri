@@ -1,10 +1,8 @@
 # coding=utf-8
 import urllib2
 import subprocess
-import microphone
-import wave
-
-flac_data = None
+import . import microphone
+import . import wave
 
 
 def wav_to_flac(wav_data):
@@ -60,7 +58,3 @@ def recognize(lang='en-US', seconds=3, rate=32000, channels=1, bits=16):
         f.write(flac_data)
 
     return ask_google(flac_data, rate=rate, lang=lang)
-
-
-if __name__ == '__main__':
-    print recognize(bits=16, lang='sv-SE')
