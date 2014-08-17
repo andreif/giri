@@ -1,8 +1,8 @@
 # coding=utf-8
 import urllib2
 import subprocess
-import . import microphone
-import . import wave
+from . import microphone
+from . import wave
 
 
 def wav_to_flac(wav_data):
